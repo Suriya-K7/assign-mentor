@@ -67,7 +67,7 @@ app.get("/", (req, res) => {
 
 /*
 for checking purpose in postman
-/student
+https://assign-mentor-wljm.onrender.com/student
 */
 
 app.get("/student", (req, res) => {
@@ -80,7 +80,7 @@ app.get("/student", (req, res) => {
 
 /*
 for checking purpose in postman
-/student
+https://assign-mentor-wljm.onrender.com/student
 body: 
 {"name":"superman"}
 */
@@ -108,7 +108,7 @@ app.post("/student", async (req, res) => {
 
 /*
 for checking purpose in postman
-/mentor
+https://assign-mentor-wljm.onrender.com/mentor
 */
 
 app.get("/mentor", (req, res) => {
@@ -121,7 +121,7 @@ app.get("/mentor", (req, res) => {
 
 /*
 for checking purpose in postman
-/mentor
+https://assign-mentor-wljm.onrender.com/mentor
 body: 
 {"name":"aktar"}
 */
@@ -147,7 +147,7 @@ app.post("/mentor", async (req, res) => {
 
 /*
 for checking purpose in postman
-/mentor/64b0131ae06556b8fc27499c/student/64b01246e06556b8fc274994
+https://assign-mentor-wljm.onrender.com/mentor/64b0131ae06556b8fc27499c/student/64b01246e06556b8fc274994
 */
 
 app.post("/mentor/:mentorId/student/:studentId", async (req, res) => {
@@ -184,7 +184,7 @@ app.post("/mentor/:mentorId/student/:studentId", async (req, res) => {
 
 /*
 for checking purpose in postman
-/student/64b01246e06556b8fc274994/mentor/64b0130fe06556b8fc274998
+https://assign-mentor-wljm.onrender.com/student/64b01246e06556b8fc274994/mentor/64b0130fe06556b8fc274998
 */
 
 app.put("/student/:studentId/mentor/:mentorId", async (req, res) => {
@@ -224,8 +224,8 @@ app.put("/student/:studentId/mentor/:mentorId", async (req, res) => {
 
 /*
 for checking purpose in postman
-/mentor/64b0130fe06556b8fc274998/studentList
-/mentor/64b01315e06556b8fc27499a/studentList
+https://assign-mentor-wljm.onrender.com/mentor/64b0130fe06556b8fc274998/studentList
+https://assign-mentor-wljm.onrender.com/mentor/64b01315e06556b8fc27499a/studentList
 */
 
 app.get("/mentor/:mentorId/studentList", async (req, res) => {
@@ -249,8 +249,8 @@ app.get("/mentor/:mentorId/studentList", async (req, res) => {
 
 /*
 for checking purpose in postman
-/student/64b01230e06556b8fc27498f/previousMentor
-/student/64b0123ce06556b8fc274992/previousMentor
+https://assign-mentor-wljm.onrender.com/student/64b01230e06556b8fc27498f/previousMentor
+https://assign-mentor-wljm.onrender.com/student/64b0123ce06556b8fc274992/previousMentor
 */
 
 app.get("/student/:studentId/previousMentor", async (req, res) => {

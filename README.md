@@ -7,45 +7,45 @@
 ### for getting all Students details
 
 get method: </br>
-/student
+https://assign-mentor-wljm.onrender.com/student
 
 ### for creating new student
 
 post method: </br>
-/student </br>
+https://assign-mentor-wljm.onrender.com/student </br>
 body: </br>
 {"name":"superman"}
 
 ### for getting all mentors details
 
 get method: </br>
-/mentor
+https://assign-mentor-wljm.onrender.com/mentor
 
 ### for creating new mentor
 
 post method: </br>
-/mentor </br>
+https://assign-mentor-wljm.onrender.com/mentor </br>
 body: </br>
 {"name":"aktar"}
 
 ### for assigning a student to mentor
 
 post method: </br>
-/mentor/64b0131ae06556b8fc27499c/student/64b01246e06556b8fc274994
+https://assign-mentor-wljm.onrender.com/mentor/64b0131ae06556b8fc27499c/student/64b01246e06556b8fc274994
 
 ### for reassigning mentor to student
 
 put method: </br>
-/student/64b01246e06556b8fc274994/mentor/64b0130fe06556b8fc274998
+https://assign-mentor-wljm.onrender.com/student/64b01246e06556b8fc274994/mentor/64b0130fe06556b8fc274998
 
 ### for getting particular mentors student list
 
 get method: </br>
-/mentor/64b0130fe06556b8fc274998/studentList </br>
-/mentor/64b01315e06556b8fc27499a/studentList
+https://assign-mentor-wljm.onrender.com/mentor/64b0130fe06556b8fc274998/studentList </br>
+https://assign-mentor-wljm.onrender.com/mentor/64b01315e06556b8fc27499a/studentList
 
 ### for getting particular students previous mentor data
 
 get method: </br>
-/student/64b01230e06556b8fc27498f/previousMentor </br>
-/student/64b0123ce06556b8fc274992/previousMentor
+https://assign-mentor-wljm.onrender.com/student/64b01230e06556b8fc27498f/previousMentor </br>
+https://assign-mentor-wljm.onrender.com/student/64b0123ce06556b8fc274992/previousMentor
