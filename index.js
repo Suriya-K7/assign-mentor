@@ -147,8 +147,7 @@ app.post("/mentor", async (req, res) => {
 
 /*
 for checking purpose in postman
-/mentor/64b0130fe06556b8fc274998/student/64b01230e06556b8fc27498f
-/mentor/64b01315e06556b8fc27499a/student/64b0123ce06556b8fc274992
+/mentor/64b0131ae06556b8fc27499c/student/64b01246e06556b8fc274994
 */
 
 app.post("/mentor/:mentorId/student/:studentId", async (req, res) => {
@@ -185,8 +184,7 @@ app.post("/mentor/:mentorId/student/:studentId", async (req, res) => {
 
 /*
 for checking purpose in postman
-/student/64b0123ce06556b8fc274992/mentor/64b0130fe06556b8fc274998
-/student/64b01230e06556b8fc27498f/mentor/64b01315e06556b8fc27499a
+/student/64b01246e06556b8fc274994/mentor/64b0130fe06556b8fc274998
 */
 
 app.put("/student/:studentId/mentor/:mentorId", async (req, res) => {

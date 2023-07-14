@@ -1,74 +1,51 @@
-# [🔗 GUVI Day 40 task] Node-JS hall booking
+# [🔗 GUVI Day 41 task] Node-JS Assign-Mentor
 
 ## Created task deployed on below link :
 
-<a href="https://hall-booking-nma7.onrender.com/" target="_blank">https://hall-booking-nma7.onrender.com/</a>
+<a href="https://assign-mentor-wljm.onrender.com/" target="_blank">https://assign-mentor-wljm.onrender.com/</a>
 
-## Postman API docs link on below :
+### for getting all Students details
 
-<a href="https://documenter.getpostman.com/view/27751149/2s946chEmU" target="_blank">https://documenter.getpostman.com/view/27751149/2s946chEmU</a>
+get method: </br>
+/student
 
-### for getting all room details
+### for creating new student
 
-get method:
-https://hall-booking-nma7.onrender.com/rooms
+post method: </br>
+/student </br>
+body: </br>
+{"name":"superman"}
 
-### for creating room details
+### for getting all mentors details
 
-post method:
-https://hall-booking-nma7.onrender.com/rooms
+get method: </br>
+/mentor
 
-example data:
-{
-"roomName": "Auditorium",
-"seats": 100,
-"amenities": "wifi,projector,AC",
-"price": 1500
-}
+### for creating new mentor
 
-### for getting all booking details
+post method: </br>
+/mentor </br>
+body: </br>
+{"name":"aktar"}
 
-get method:
-https://hall-booking-nma7.onrender.com/bookings
+### for assigning a student to mentor
 
-### for creating room bookings
+post method: </br>
+/mentor/64b0131ae06556b8fc27499c/student/64b01246e06556b8fc274994
 
-post method:
-https://hall-booking-nma7.onrender.com/bookings
+### for reassigning mentor to student
 
-Example data: 01)
-{
-"customerName": "suriya",
-"roomId": "01",
-"date": "12-Jul-2023",
-"start": "08:00",
-"end": "09:00",
-"status": "confirmed"
-}
+put method: </br>
+/student/64b01246e06556b8fc274994/mentor/64b0130fe06556b8fc274998
 
-Example data: 02)
-{
-"customerName": "suriya",
-"roomId": "01",
-"date": "12-Jul-2023",
-"start": "08:00",
-"end": "09:00",
-"status": "confirmed"
-}
+### for getting particular mentors student list
 
--- Note:example 2 will show error of booking on same time
+get method: </br>
+/mentor/64b0130fe06556b8fc274998/studentList </br>
+/mentor/64b01315e06556b8fc27499a/studentList
 
-### for getting all booked rooms Data
+### for getting particular students previous mentor data
 
-get method:
-https://hall-booking-nma7.onrender.com/bookedRooms
-
-### for getting all customers data
-
-get method:
-https://hall-booking-nma7.onrender.com/customers
-
-### for getting particular customers booked data
-
-get method:
-https://hall-booking-nma7.onrender.com/customers/suriya
+get method: </br>
+/student/64b01230e06556b8fc27498f/previousMentor </br>
+/student/64b0123ce06556b8fc274992/previousMentor
